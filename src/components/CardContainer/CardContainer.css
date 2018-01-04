@@ -1,0 +1,7 @@
+.loading {
+  background-image: url('./wolf.gif');
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
