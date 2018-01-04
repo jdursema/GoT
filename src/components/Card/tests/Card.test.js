@@ -11,7 +11,8 @@ describe('Card', () => {
       titles= {'Kings of the North'}
       coatOfArms={'Dire Wolf'}
       ancestralWeapons={'Long Sword'}
-      words={'Winter is coming'}/>);
+      words={'Winter is coming'}
+      active={false}/>);
 
     expect(renderedCard).toMatchSnapshot();
   });
