@@ -7,12 +7,12 @@ const Card = props => {
       <h2>
         {props.name}
       </h2>
-      <p>{props.founded}</p>
-      <p>{props.seats}</p>
-      <p>{props.titles}</p>
-      <p>{props.coatOfArms}</p>
-      <p>{props.ancestralWeapons}</p>
-      <p>{props.words}</p>
+      <p>Founded: {props.founded}</p>
+      <p>Seats: {props.seats}</p>
+      <p>Titles: {props.titles}</p>
+      <p>Coat Of Arms: {props.coatOfArms}</p>
+      <p>Weapons: {props.ancestralWeapons}</p>
+      <p>Words: {props.words}</p>
     </div>
   )
 }
