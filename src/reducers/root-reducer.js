@@ -4,7 +4,7 @@ import { houseReducer } from './house-reducer';
 
 const rootReducer = combineReducers({
   fake,
-  Houses: houseReducer
+  houses: houseReducer
 });
 
 
