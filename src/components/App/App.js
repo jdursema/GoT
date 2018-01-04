@@ -3,17 +3,16 @@ import PropTypes, { shape, func, string } from 'prop-types';
 import logo from './logo.svg';
 import './App.css';
 import { connect } from 'react-redux';
-import { fakeAction } from '../../actions';
-import { fetchData } from '../../actions';
+import { fakeAction, fetchData } from '../../actions';
 import CardContainer from '../CardContainer/CardContainer';
 
 class App extends Component {
 
   componentDidMount() {
-    try{
+    try {
       this.props.handleFetchData()
-    } catch(error){
-      console.log(error)
+    } catch (error){
+      console.log(error);
     }
   }
 

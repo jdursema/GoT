@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Card from '../Card';
 
-describe ('Card', () => {
+describe('Card', () => {
   it('should match the snapshot', () => {
     const renderedCard = shallow(<Card
       name= {'Stark'}
@@ -11,8 +11,8 @@ describe ('Card', () => {
       titles= {'Kings of the North'}
       coatOfArms={'Dire Wolf'}
       ancestralWeapons={'Long Sword'}
-      words={'Winter is coming'}/>)
+      words={'Winter is coming'}/>);
 
-    expect(renderedCard).toMatchSnapshot()
+    expect(renderedCard).toMatchSnapshot();
   });
 });
