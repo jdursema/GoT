@@ -2,10 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Card from '../Card/Card.js';
 import './CardContainer.css'; 
+import PropTypes from 'prop-types';
 
 export const CardContainer = props => {
-  const mappedCards= props.houses.map((house)=> {
+  const mappedCards= props.houses.map((house, index)=> {
     return <Card
+      key={index}
       name= {house.name}
       founded={house.founded}seats= {house.seats}
       titles= {house.titles}
@@ -37,3 +39,6 @@ const mapStateToProps = state => ({
 
 export default connect(mapStateToProps, null)(CardContainer);
 
+CardContainer.propTypes = {
+  houses: PropTypes.array
+};
