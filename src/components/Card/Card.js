@@ -70,11 +70,11 @@ export default Card;
 Card.propTypes = {
   name: PropTypes.string,
   founded: PropTypes.string,
-  titles: PropTypes.array,
+  titles: PropTypes.string || PropTypes.array,
   coatOfArms: PropTypes.string,
-  ancestralWeapons: PropTypes.array,
+  ancestralWeapons: PropTypes.string,
   active: PropTypes.bool,
-  seats: PropTypes.array,
+  seats: PropTypes.string,
   words: PropTypes.string,
   swornMembers: PropTypes.array
 };

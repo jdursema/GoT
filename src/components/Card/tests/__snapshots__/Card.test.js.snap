@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Card
+    active={false}
     ancestralWeapons="Long Sword"
     coatOfArms="Dire Wolf"
     founded="by Julie"
@@ -54,6 +55,8 @@ ShallowWrapper {
           Winter is coming
 </p>,
       ],
+      "className": "card",
+      "onClick": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -208,6 +211,8 @@ ShallowWrapper {
             Winter is coming
 </p>,
         ],
+        "className": "card",
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": Array [
