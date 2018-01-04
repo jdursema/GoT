@@ -1,0 +1,339 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    ancestralWeapons="Long Sword"
+    coatOfArms="Dire Wolf"
+    founded="by Julie"
+    name="Stark"
+    seats="lots of um"
+    titles="Kings of the North"
+    words="Winter is coming"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Stark
+</h2>,
+        <p>
+          Founded: 
+          by Julie
+</p>,
+        <p>
+          Seats: 
+          lots of um
+</p>,
+        <p>
+          Titles: 
+          Kings of the North
+</p>,
+        <p>
+          Coat Of Arms: 
+          Dire Wolf
+</p>,
+        <p>
+          Weapons: 
+          Long Sword
+</p>,
+        <p>
+          Words: 
+          Winter is coming
+</p>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Stark",
+        },
+        "ref": null,
+        "rendered": "Stark",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Founded: ",
+            "by Julie",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Founded: ",
+          "by Julie",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Seats: ",
+            "lots of um",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Seats: ",
+          "lots of um",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Titles: ",
+            "Kings of the North",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Titles: ",
+          "Kings of the North",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Coat Of Arms: ",
+            "Dire Wolf",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Coat Of Arms: ",
+          "Dire Wolf",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Weapons: ",
+            "Long Sword",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Weapons: ",
+          "Long Sword",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Words: ",
+            "Winter is coming",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Words: ",
+          "Winter is coming",
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Stark
+</h2>,
+          <p>
+            Founded: 
+            by Julie
+</p>,
+          <p>
+            Seats: 
+            lots of um
+</p>,
+          <p>
+            Titles: 
+            Kings of the North
+</p>,
+          <p>
+            Coat Of Arms: 
+            Dire Wolf
+</p>,
+          <p>
+            Weapons: 
+            Long Sword
+</p>,
+          <p>
+            Words: 
+            Winter is coming
+</p>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Stark",
+          },
+          "ref": null,
+          "rendered": "Stark",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Founded: ",
+              "by Julie",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Founded: ",
+            "by Julie",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Seats: ",
+              "lots of um",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Seats: ",
+            "lots of um",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Titles: ",
+              "Kings of the North",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Titles: ",
+            "Kings of the North",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Coat Of Arms: ",
+              "Dire Wolf",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Coat Of Arms: ",
+            "Dire Wolf",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Weapons: ",
+              "Long Sword",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Weapons: ",
+            "Long Sword",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Words: ",
+              "Winter is coming",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Words: ",
+            "Winter is coming",
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
