@@ -2,8 +2,17 @@ import React from 'react';
 
 const Card = props => {
 
+  const swornMembers = props.swornMembers.map((member)=> {
+    const key = Object.keys(member)
+    return (
+      <p>{key}: {member[key]}</p>
+      
+    )
+  })
+
+
   return (
-    <div>
+    <div className= {props.class}>
       <h2>
         {props.name}
       </h2>
@@ -13,6 +22,9 @@ const Card = props => {
       <p>Coat Of Arms: {props.coatOfArms}</p>
       <p>Weapons: {props.ancestralWeapons}</p>
       <p>Words: {props.words}</p>
+      <div>
+        {swornMembers}
+      </div>
     </div>
   );
 };

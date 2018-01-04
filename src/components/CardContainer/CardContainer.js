@@ -11,7 +11,9 @@ export const CardContainer = props => {
       titles= {house.titles}
       coatOfArms={house.coatOfArms}
       ancestralWeapons={house.ancestralWeapons}
-      words={house.words}/>;
+      words={house.words}
+      class= 'card'
+      swornMembers={house.swornMembers}/>;
   });
 
   if (props.houses[0]){
