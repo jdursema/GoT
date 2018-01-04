@@ -5,6 +5,7 @@ import './App.css';
 import { connect } from 'react-redux';
 import { fakeAction } from '../../actions';
 import { fetchData } from '../../actions';
+import CardContainer from '../CardContainer/CardContainer';
 
 class App extends Component {
 
@@ -28,6 +29,7 @@ class App extends Component {
           }}> FAKE ACTION</button>
         </div>
         <div className='Display-info'>
+          <CardContainer/>
         </div>
       </div>
     );
