@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes, { shape, func, string } from 'prop-types';
+import { shape, func, string } from 'prop-types';
 import logo from './logo.svg';
 import './App.css';
 import { connect } from 'react-redux';
@@ -10,7 +10,7 @@ class App extends Component {
 
   componentDidMount() {
     try {
-      this.props.handleFetchData()
+      this.props.handleFetchData();
     } catch (error){
       console.log(error);
     }
@@ -37,11 +37,14 @@ class App extends Component {
 
 App.propTypes = {
   fake: shape({ fake: string }),
-  fakeAction: func.isRequired
+  fakeAction: func.isRequired,
+  handleFetchData: func
 };
 
-const mapStateToProps = ({ fake }) => ({ fake });
-const mapDispatchToProps = dispatch => ({      fakeAction: () => dispatch(fakeAction()),
+const mapStateToProps = ({ fake }) => ({
+  fake });
+const mapDispatchToProps = dispatch => ({   
+  fakeAction: () => dispatch(fakeAction()),
   handleFetchData: () => dispatch(fetchData())
 });
 export default connect(mapStateToProps, mapDispatchToProps)(App);

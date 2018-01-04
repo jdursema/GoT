@@ -4,11 +4,11 @@ export const fetchData = () => async (dispatch) => {
   try {
     const fetchGoTData = await fetch('http://localhost:3001/api/v1/houses');
     const parsedData = await fetchGoTData.json();
-    const swornMembers = await dispatch(fetchSwornMembers(parsedData))
+    const swornMembers = await dispatch(fetchSwornMembers(parsedData));
     const cleanData = parsedData.map((house, index)=> {
-      return Object.assign({}, house, {swornMembers: swornMembers[index]})
-    })
-    console.log(cleanData)
+      return Object.assign({}, house, {swornMembers: swornMembers[index]});
+    });
+    console.log(cleanData);
 
     dispatch(storeHouseData(cleanData));
   } catch (error){
@@ -16,7 +16,7 @@ export const fetchData = () => async (dispatch) => {
   }
 };
 
-export const fetchSwornMembers = (housesArray) => async (dispatch) => {
+export const fetchSwornMembers = (housesArray) => async () => {
   const unresolvedPromises = housesArray.map((house)=> {
     const swornMembers= house.swornMembers.map(async (memberURL)=> {
       const memberData = await fetch('http://localhost:3001/api/v1/character', {
@@ -26,14 +26,14 @@ export const fetchSwornMembers = (housesArray) => async (dispatch) => {
         },
         body: JSON.stringify({url: memberURL})
       });
-      const members= await memberData.json()
-      return {[members.name]: members.died || 'Alive'}
-    })
+      const members= await memberData.json();
+      return {[members.name]: members.died || 'Alive'};
+    });
     return Promise.all(swornMembers);
 
-  })
+  });
   return Promise.all(unresolvedPromises);
-}
+};
 
 export const storeHouseData = (arrayOfHouses) => ({ 
   type: 'STORE_HOUSE_DATA',
