@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Card from '../Card/Card.js';
 import './CardContainer.css'
 
-const CardContainer = props => {
+export const CardContainer = props => {
 const mappedCards= props.houses.map((house)=> {
   return <Card
           name= {house.name}
@@ -34,3 +34,4 @@ const mapStateToProps = state => ({
 })
 
 export default connect (mapStateToProps, null)(CardContainer);
+
