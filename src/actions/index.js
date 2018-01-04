@@ -10,7 +10,7 @@ export const fetchData = () => async (dispatch) => {
     })
     console.log(cleanData)
 
-    dispatch(storeHouseData(parsedData));
+    dispatch(storeHouseData(cleanData));
   } catch (error){
     console.log(error);
   }
