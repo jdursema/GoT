@@ -14,7 +14,7 @@ const Card = props => {
       <p>Weapons: {props.ancestralWeapons}</p>
       <p>Words: {props.words}</p>
     </div>
-  )
-}
+  );
+};
 
 export default Card;

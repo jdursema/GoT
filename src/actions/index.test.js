@@ -9,5 +9,5 @@ describe('All actions', () => {
       arrayOfHouses
     };
     expect(actions.storeHouseData(arrayOfHouses)).toEqual(expected);
-  })
-})
+  });
+});
