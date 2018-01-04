@@ -12,7 +12,7 @@ export const CardContainer = props => {
       coatOfArms={house.coatOfArms}
       ancestralWeapons={house.ancestralWeapons}
       words={house.words}
-      class= 'card'
+      active= {false}
       swornMembers={house.swornMembers}/>;
   });
 
